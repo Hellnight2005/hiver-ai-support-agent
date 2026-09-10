@@ -1,0 +1,51 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+1,cust_1,True,Tue Oct 10 10:00:00 +0000 2017,"@AmazonHelp My order 112-9847291-098234 has not arrived yet and it was supposed to be delivered yesterday.",2,
+2,AmazonHelp,False,Tue Oct 10 10:05:00 +0000 2017,"@cust_1 We are sorry to hear that! Please send us a DM with your tracking number so we can check the status.",3,1
+3,cust_1,True,Tue Oct 10 10:10:00 +0000 2017,"@AmazonHelp Sent the DM! Please look into it ASAP.",4,2
+4,AmazonHelp,False,Tue Oct 10 10:15:00 +0000 2017,"@cust_1 Thanks for providing details. We have updated your shipment and it is out for delivery today.",,3
+5,cust_2,True,Tue Oct 10 11:00:00 +0000 2017,"@AmazonHelp I was charged twice for my Prime membership this month. Can I get a refund for the extra charge?",6,
+6,AmazonHelp,False,Tue Oct 10 11:04:00 +0000 2017,"@cust_2 Apologies for the trouble! Please DM us your account email so we can verify the duplicate charge and process a refund.",7,5
+7,cust_2,True,Tue Oct 10 11:10:00 +0000 2017,"@cust_2 DM sent. Hope it gets resolved soon.",8,6
+8,AmazonHelp,False,Tue Oct 10 11:15:00 +0000 2017,"@cust_2 We have verified the duplicate billing and issued a full refund of $14.99. It will reflect in 3-5 business days.",,7
+9,cust_3,True,Tue Oct 10 12:00:00 +0000 2017,"@AmazonHelp I cannot log into my account. It says password incorrect even though I reset it.",10,
+10,AmazonHelp,False,Tue Oct 10 12:05:00 +0000 2017,"@cust_3 Sorry for the hassle! Try clearing browser cache or resetting password via our account recovery link: amazon.com/help",,9
+11,cust_4,True,Tue Oct 10 13:00:00 +0000 2017,"@AmazonHelp Received a broken ceramic vase in my package today! The box was completely damaged.",12,
+12,AmazonHelp,False,Tue Oct 10 13:06:00 +0000 2017,"@cust_4 That is terrible to hear! Please DM us your order ID and a photo of the damaged item so we can arrange a free replacement.",13,11
+13,cust_4,True,Tue Oct 10 13:15:00 +0000 2017,"@AmazonHelp Just sent the order ID and image link in DM.",14,12
+14,AmazonHelp,False,Tue Oct 10 13:20:00 +0000 2017,"@cust_4 Replacement order has been placed! You will receive a tracking link shortly.",,13
+15,cust_5,True,Tue Oct 10 14:00:00 +0000 2017,"@AmazonHelp How much is Prime video monthly subscription right now in the US?",16,
+16,AmazonHelp,False,Tue Oct 10 14:03:00 +0000 2017,"@cust_5 Hi! Prime Video standalone subscription is $8.99/month, or included with full Amazon Prime at $14.99/month.",,15
+17,cust_6,True,Tue Oct 10 15:00:00 +0000 2017,"@AmazonHelp My package says delivered but I checked my porch and mailbox and nothing is there.",18,
+18,AmazonHelp,False,Tue Oct 10 15:05:00 +0000 2017,"@cust_6 Please allow 24 hours as carriers sometimes scan early. If still missing, DM us your order details for assistance.",19,17
+19,cust_6,True,Tue Oct 10 15:30:00 +0000 2017,"@AmazonHelp Still missing after checking with neighbors. Please help.",20,18
+20,AmazonHelp,False,Tue Oct 10 15:35:00 +0000 2017,"@cust_6 Thank you for confirming. We have initiated a replacement order for you at no additional charge.",,19
+21,cust_7,True,Tue Oct 10 16:00:00 +0000 2017,"@AmazonHelp I want to cancel order 408-1122334-998877 before it ships.",22,
+22,AmazonHelp,False,Tue Oct 10 16:05:00 +0000 2017,"@cust_7 You can cancel unshipped items under Your Orders on our website, or DM us if you need us to process it for you.",23,21
+23,cust_7,True,Tue Oct 10 16:10:00 +0000 2017,"@AmazonHelp DM sent with confirmation request.",24,22
+24,AmazonHelp,False,Tue Oct 10 16:15:00 +0000 2017,"@cust_7 Order 408-1122334-998877 has been successfully cancelled and any hold on your card released.",,23
+25,cust_8,True,Tue Oct 10 17:00:00 +0000 2017,"@AmazonHelp Someone made an unauthorized purchase on my account using my stored credit card!",26,
+26,AmazonHelp,False,Tue Oct 10 17:02:00 +0000 2017,"@cust_8 We take security very seriously! Please immediately DM us your email and secure your account by changing your password.",27,25
+27,cust_8,True,Tue Oct 10 17:10:00 +0000 2017,"@AmazonHelp I changed password. Please cancel that order and secure the account.",28,26
+28,AmazonHelp,False,Tue Oct 10 17:15:00 +0000 2017,"@cust_8 Fraud team has been alerted, unauthorized transaction blocked, and account secured.",,27
+29,cust_9,True,Tue Oct 10 18:00:00 +0000 2017,"@AmazonHelp Your customer support team was super helpful today resolving my issue. Thank you!",30,
+30,AmazonHelp,False,Tue Oct 10 18:02:00 +0000 2017,"@cust_9 You are very welcome! We are always happy to help. Have a wonderful day!",,29
+31,cust_10,True,Tue Oct 10 19:00:00 +0000 2017,"@AppleSupport My iPhone screen went completely black and won't turn on even after charging.",32,
+32,AppleSupport,False,Tue Oct 10 19:05:00 +0000 2017,"@cust_10 Try a force restart by pressing Volume Up then Volume Down and holding the Power button. DM us if issue persists.",33,31
+33,cust_10,True,Tue Oct 10 19:10:00 +0000 2017,"@AppleSupport Force restart didn't work. Still black screen.",34,32
+34,AppleSupport,False,Tue Oct 10 19:15:00 +0000 2017,"@cust_10 Please DM us your serial number so we can check warranty and schedule an Apple Genius Bar appointment.",,33
+35,cust_11,True,Tue Oct 10 20:00:00 +0000 2017,"@SpotifyCares Music keeps pausing automatically every 30 seconds on iOS 11.",36,
+36,SpotifyCares,False,Tue Oct 10 20:05:00 +0000 2017,"@cust_11 Hi! Try performing a clean reinstall of the app and checking your battery saver settings.",,35
+37,cust_12,True,Tue Oct 10 21:00:00 +0000 2017,"@Uber_Support My driver took a very long detour and charged me double the estimated fare.",38,
+38,Uber_Support,False,Tue Oct 10 21:05:00 +0000 2017,"@cust_12 Send us a DM with your trip details and phone number so we can review the route and issue a fare adjustment.",39,37
+39,cust_12,True,Tue Oct 10 21:10:00 +0000 2017,"@Uber_Support Sent DM with trip ID 99281.",40,38
+40,Uber_Support,False,Tue Oct 10 21:15:00 +0000 2017,"@cust_12 Route reviewed and fare adjusted. Refund of $12.50 issued to your payment method.",,39
+41,cust_13,True,Tue Oct 11 08:00:00 +0000 2017,"@AmazonHelp I received the wrong item in my package. I ordered shoes but got a kitchen blender.",42,
+42,AmazonHelp,False,Tue Oct 11 08:05:00 +0000 2017,"@cust_13 We apologize for the mix up! DM us your order number so we can send the correct item right away.",43,41
+43,cust_13,True,Tue Oct 11 08:10:00 +0000 2017,"@AmazonHelp DM sent with order number 114-009988-12345.",44,42
+44,AmazonHelp,False,Tue Oct 11 08:15:00 +0000 2017,"@cust_13 Correct item dispatched! Return label for blender has been sent to your email.",,43
+45,cust_14,True,Tue Oct 11 09:00:00 +0000 2017,"@AmazonHelp How do I update my default delivery address on my account?",46,
+46,AmazonHelp,False,Tue Oct 11 09:03:00 +0000 2017,"@cust_14 Go to Your Account > Your Addresses to add, edit, or set default delivery addresses.",,45
+47,cust_15,True,Tue Oct 11 10:00:00 +0000 2017,"@AmazonHelp I was billed for a gift card that I never received or purchased.",48,
+48,AmazonHelp,False,Tue Oct 11 10:05:00 +0000 2017,"@cust_15 Security alert! DM us your email and account details immediately so our payments security team can audit this charge.",49,47
+49,cust_15,True,Tue Oct 11 10:10:00 +0000 2017,"@AmazonHelp Sent DM with payment transaction ID.",50,48
+50,AmazonHelp,False,Tue Oct 11 10:15:00 +0000 2017,"@cust_15 Transaction cancelled, refund initiated, and security verification required.",,49

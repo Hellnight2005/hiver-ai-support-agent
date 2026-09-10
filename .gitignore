@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Secrets & Environment
+.env
+.env.local
+
+# Data files (Exclude large twcs.csv, retain sample_twcs.csv)
+data/raw/twcs.csv
+data/raw/*.zip
+data/cache/*
+!data/cache/.gitkeep
+artifacts/retrieval_index/*
+!artifacts/retrieval_index/.gitkeep
+
+# IDEs & Agents
+.vscode/
+.idea/
+.agents/
+.gemini/
+*.swp
+*.swo
+
+# Testing / Coverage / Logs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+

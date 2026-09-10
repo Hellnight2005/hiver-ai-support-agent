@@ -1,0 +1,93 @@
+[
+  {
+    "conversation_id": "conv_1",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "1",
+        "role": "customer",
+        "author_id": "cust_1",
+        "text": "@AmazonHelp My order 112-9847291-098234 has not arrived yet and it was supposed to be delivered yesterday.",
+        "timestamp": "Tue Oct 10 10:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "2",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_1 We are sorry to hear that! Please send us a DM with your tracking number so we can check the status.",
+        "timestamp": "Tue Oct 10 10:05:00 +0000 2017"
+      },
+      {
+        "tweet_id": "3",
+        "role": "customer",
+        "author_id": "cust_1",
+        "text": "@AmazonHelp Sent the DM! Please look into it ASAP.",
+        "timestamp": "Tue Oct 10 10:10:00 +0000 2017"
+      },
+      {
+        "tweet_id": "4",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_1 Thanks for providing details. We have updated your shipment and it is out for delivery today.",
+        "timestamp": "Tue Oct 10 10:15:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_1"
+  },
+  {
+    "conversation_id": "conv_5",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "5",
+        "role": "customer",
+        "author_id": "cust_2",
+        "text": "@AmazonHelp I was charged twice for my Prime membership this month. Can I get a refund for the extra charge?",
+        "timestamp": "Tue Oct 10 11:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "6",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_2 Apologies for the trouble! Please DM us your account email so we can verify the duplicate charge and process a refund.",
+        "timestamp": "Tue Oct 10 11:04:00 +0000 2017"
+      },
+      {
+        "tweet_id": "7",
+        "role": "customer",
+        "author_id": "cust_2",
+        "text": "@cust_2 DM sent. Hope it gets resolved soon.",
+        "timestamp": "Tue Oct 10 11:10:00 +0000 2017"
+      },
+      {
+        "tweet_id": "8",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_2 We have verified the duplicate billing and issued a full refund of $14.99. It will reflect in 3-5 business days.",
+        "timestamp": "Tue Oct 10 11:15:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_2"
+  },
+  {
+    "conversation_id": "conv_45",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "45",
+        "role": "customer",
+        "author_id": "cust_14",
+        "text": "@AmazonHelp How do I update my default delivery address on my account?",
+        "timestamp": "Tue Oct 11 09:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "46",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_14 Go to Your Account > Your Addresses to add, edit, or set default delivery addresses.",
+        "timestamp": "Tue Oct 11 09:03:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_14"
+  }
+]

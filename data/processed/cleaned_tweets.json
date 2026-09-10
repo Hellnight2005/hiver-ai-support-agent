@@ -1,0 +1,502 @@
+[
+  {
+    "tweet_id": "1",
+    "author_id": "cust_1",
+    "inbound": true,
+    "created_at": "Tue Oct 10 10:00:00 +0000 2017",
+    "text": "@AmazonHelp My order 112-9847291-098234 has not arrived yet and it was supposed to be delivered yesterday.",
+    "response_tweet_id": "2",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "2",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 10:05:00 +0000 2017",
+    "text": "@cust_1 We are sorry to hear that! Please send us a DM with your tracking number so we can check the status.",
+    "response_tweet_id": "3",
+    "in_response_to_tweet_id": "1",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "3",
+    "author_id": "cust_1",
+    "inbound": true,
+    "created_at": "Tue Oct 10 10:10:00 +0000 2017",
+    "text": "@AmazonHelp Sent the DM! Please look into it ASAP.",
+    "response_tweet_id": "4",
+    "in_response_to_tweet_id": "2",
+    "brand": null
+  },
+  {
+    "tweet_id": "4",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 10:15:00 +0000 2017",
+    "text": "@cust_1 Thanks for providing details. We have updated your shipment and it is out for delivery today.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "3",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "5",
+    "author_id": "cust_2",
+    "inbound": true,
+    "created_at": "Tue Oct 10 11:00:00 +0000 2017",
+    "text": "@AmazonHelp I was charged twice for my Prime membership this month. Can I get a refund for the extra charge?",
+    "response_tweet_id": "6",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "6",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 11:04:00 +0000 2017",
+    "text": "@cust_2 Apologies for the trouble! Please DM us your account email so we can verify the duplicate charge and process a refund.",
+    "response_tweet_id": "7",
+    "in_response_to_tweet_id": "5",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "7",
+    "author_id": "cust_2",
+    "inbound": true,
+    "created_at": "Tue Oct 10 11:10:00 +0000 2017",
+    "text": "@cust_2 DM sent. Hope it gets resolved soon.",
+    "response_tweet_id": "8",
+    "in_response_to_tweet_id": "6",
+    "brand": null
+  },
+  {
+    "tweet_id": "8",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 11:15:00 +0000 2017",
+    "text": "@cust_2 We have verified the duplicate billing and issued a full refund of $14.99. It will reflect in 3-5 business days.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "7",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "9",
+    "author_id": "cust_3",
+    "inbound": true,
+    "created_at": "Tue Oct 10 12:00:00 +0000 2017",
+    "text": "@AmazonHelp I cannot log into my account. It says password incorrect even though I reset it.",
+    "response_tweet_id": "10",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "10",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 12:05:00 +0000 2017",
+    "text": "@cust_3 Sorry for the hassle! Try clearing browser cache or resetting password via our account recovery link: amazon.com/help",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "9",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "11",
+    "author_id": "cust_4",
+    "inbound": true,
+    "created_at": "Tue Oct 10 13:00:00 +0000 2017",
+    "text": "@AmazonHelp Received a broken ceramic vase in my package today! The box was completely damaged.",
+    "response_tweet_id": "12",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "12",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 13:06:00 +0000 2017",
+    "text": "@cust_4 That is terrible to hear! Please DM us your order ID and a photo of the damaged item so we can arrange a free replacement.",
+    "response_tweet_id": "13",
+    "in_response_to_tweet_id": "11",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "13",
+    "author_id": "cust_4",
+    "inbound": true,
+    "created_at": "Tue Oct 10 13:15:00 +0000 2017",
+    "text": "@AmazonHelp Just sent the order ID and image link in DM.",
+    "response_tweet_id": "14",
+    "in_response_to_tweet_id": "12",
+    "brand": null
+  },
+  {
+    "tweet_id": "14",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 13:20:00 +0000 2017",
+    "text": "@cust_4 Replacement order has been placed! You will receive a tracking link shortly.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "13",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "15",
+    "author_id": "cust_5",
+    "inbound": true,
+    "created_at": "Tue Oct 10 14:00:00 +0000 2017",
+    "text": "@AmazonHelp How much is Prime video monthly subscription right now in the US?",
+    "response_tweet_id": "16",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "16",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 14:03:00 +0000 2017",
+    "text": "@cust_5 Hi! Prime Video standalone subscription is $8.99/month, or included with full Amazon Prime at $14.99/month.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "15",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "17",
+    "author_id": "cust_6",
+    "inbound": true,
+    "created_at": "Tue Oct 10 15:00:00 +0000 2017",
+    "text": "@AmazonHelp My package says delivered but I checked my porch and mailbox and nothing is there.",
+    "response_tweet_id": "18",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "18",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 15:05:00 +0000 2017",
+    "text": "@cust_6 Please allow 24 hours as carriers sometimes scan early. If still missing, DM us your order details for assistance.",
+    "response_tweet_id": "19",
+    "in_response_to_tweet_id": "17",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "19",
+    "author_id": "cust_6",
+    "inbound": true,
+    "created_at": "Tue Oct 10 15:30:00 +0000 2017",
+    "text": "@AmazonHelp Still missing after checking with neighbors. Please help.",
+    "response_tweet_id": "20",
+    "in_response_to_tweet_id": "18",
+    "brand": null
+  },
+  {
+    "tweet_id": "20",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 15:35:00 +0000 2017",
+    "text": "@cust_6 Thank you for confirming. We have initiated a replacement order for you at no additional charge.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "19",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "21",
+    "author_id": "cust_7",
+    "inbound": true,
+    "created_at": "Tue Oct 10 16:00:00 +0000 2017",
+    "text": "@AmazonHelp I want to cancel order 408-1122334-998877 before it ships.",
+    "response_tweet_id": "22",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "22",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 16:05:00 +0000 2017",
+    "text": "@cust_7 You can cancel unshipped items under Your Orders on our website, or DM us if you need us to process it for you.",
+    "response_tweet_id": "23",
+    "in_response_to_tweet_id": "21",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "23",
+    "author_id": "cust_7",
+    "inbound": true,
+    "created_at": "Tue Oct 10 16:10:00 +0000 2017",
+    "text": "@AmazonHelp DM sent with confirmation request.",
+    "response_tweet_id": "24",
+    "in_response_to_tweet_id": "22",
+    "brand": null
+  },
+  {
+    "tweet_id": "24",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 16:15:00 +0000 2017",
+    "text": "@cust_7 Order 408-1122334-998877 has been successfully cancelled and any hold on your card released.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "23",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "25",
+    "author_id": "cust_8",
+    "inbound": true,
+    "created_at": "Tue Oct 10 17:00:00 +0000 2017",
+    "text": "@AmazonHelp Someone made an unauthorized purchase on my account using my stored credit card!",
+    "response_tweet_id": "26",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "26",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 17:02:00 +0000 2017",
+    "text": "@cust_8 We take security very seriously! Please immediately DM us your email and secure your account by changing your password.",
+    "response_tweet_id": "27",
+    "in_response_to_tweet_id": "25",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "27",
+    "author_id": "cust_8",
+    "inbound": true,
+    "created_at": "Tue Oct 10 17:10:00 +0000 2017",
+    "text": "@AmazonHelp I changed password. Please cancel that order and secure the account.",
+    "response_tweet_id": "28",
+    "in_response_to_tweet_id": "26",
+    "brand": null
+  },
+  {
+    "tweet_id": "28",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 17:15:00 +0000 2017",
+    "text": "@cust_8 Fraud team has been alerted, unauthorized transaction blocked, and account secured.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "27",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "29",
+    "author_id": "cust_9",
+    "inbound": true,
+    "created_at": "Tue Oct 10 18:00:00 +0000 2017",
+    "text": "@AmazonHelp Your customer support team was super helpful today resolving my issue. Thank you!",
+    "response_tweet_id": "30",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "30",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 10 18:02:00 +0000 2017",
+    "text": "@cust_9 You are very welcome! We are always happy to help. Have a wonderful day!",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "29",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "31",
+    "author_id": "cust_10",
+    "inbound": true,
+    "created_at": "Tue Oct 10 19:00:00 +0000 2017",
+    "text": "@AppleSupport My iPhone screen went completely black and won't turn on even after charging.",
+    "response_tweet_id": "32",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "32",
+    "author_id": "AppleSupport",
+    "inbound": false,
+    "created_at": "Tue Oct 10 19:05:00 +0000 2017",
+    "text": "@cust_10 Try a force restart by pressing Volume Up then Volume Down and holding the Power button. DM us if issue persists.",
+    "response_tweet_id": "33",
+    "in_response_to_tweet_id": "31",
+    "brand": "AppleSupport"
+  },
+  {
+    "tweet_id": "33",
+    "author_id": "cust_10",
+    "inbound": true,
+    "created_at": "Tue Oct 10 19:10:00 +0000 2017",
+    "text": "@AppleSupport Force restart didn't work. Still black screen.",
+    "response_tweet_id": "34",
+    "in_response_to_tweet_id": "32",
+    "brand": null
+  },
+  {
+    "tweet_id": "34",
+    "author_id": "AppleSupport",
+    "inbound": false,
+    "created_at": "Tue Oct 10 19:15:00 +0000 2017",
+    "text": "@cust_10 Please DM us your serial number so we can check warranty and schedule an Apple Genius Bar appointment.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "33",
+    "brand": "AppleSupport"
+  },
+  {
+    "tweet_id": "35",
+    "author_id": "cust_11",
+    "inbound": true,
+    "created_at": "Tue Oct 10 20:00:00 +0000 2017",
+    "text": "@SpotifyCares Music keeps pausing automatically every 30 seconds on iOS 11.",
+    "response_tweet_id": "36",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "36",
+    "author_id": "SpotifyCares",
+    "inbound": false,
+    "created_at": "Tue Oct 10 20:05:00 +0000 2017",
+    "text": "@cust_11 Hi! Try performing a clean reinstall of the app and checking your battery saver settings.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "35",
+    "brand": "SpotifyCares"
+  },
+  {
+    "tweet_id": "37",
+    "author_id": "cust_12",
+    "inbound": true,
+    "created_at": "Tue Oct 10 21:00:00 +0000 2017",
+    "text": "@Uber_Support My driver took a very long detour and charged me double the estimated fare.",
+    "response_tweet_id": "38",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "38",
+    "author_id": "Uber_Support",
+    "inbound": false,
+    "created_at": "Tue Oct 10 21:05:00 +0000 2017",
+    "text": "@cust_12 Send us a DM with your trip details and phone number so we can review the route and issue a fare adjustment.",
+    "response_tweet_id": "39",
+    "in_response_to_tweet_id": "37",
+    "brand": "Uber_Support"
+  },
+  {
+    "tweet_id": "39",
+    "author_id": "cust_12",
+    "inbound": true,
+    "created_at": "Tue Oct 10 21:10:00 +0000 2017",
+    "text": "@Uber_Support Sent DM with trip ID 99281.",
+    "response_tweet_id": "40",
+    "in_response_to_tweet_id": "38",
+    "brand": null
+  },
+  {
+    "tweet_id": "40",
+    "author_id": "Uber_Support",
+    "inbound": false,
+    "created_at": "Tue Oct 10 21:15:00 +0000 2017",
+    "text": "@cust_12 Route reviewed and fare adjusted. Refund of $12.50 issued to your payment method.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "39",
+    "brand": "Uber_Support"
+  },
+  {
+    "tweet_id": "41",
+    "author_id": "cust_13",
+    "inbound": true,
+    "created_at": "Tue Oct 11 08:00:00 +0000 2017",
+    "text": "@AmazonHelp I received the wrong item in my package. I ordered shoes but got a kitchen blender.",
+    "response_tweet_id": "42",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "42",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 11 08:05:00 +0000 2017",
+    "text": "@cust_13 We apologize for the mix up! DM us your order number so we can send the correct item right away.",
+    "response_tweet_id": "43",
+    "in_response_to_tweet_id": "41",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "43",
+    "author_id": "cust_13",
+    "inbound": true,
+    "created_at": "Tue Oct 11 08:10:00 +0000 2017",
+    "text": "@AmazonHelp DM sent with order number 114-009988-12345.",
+    "response_tweet_id": "44",
+    "in_response_to_tweet_id": "42",
+    "brand": null
+  },
+  {
+    "tweet_id": "44",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 11 08:15:00 +0000 2017",
+    "text": "@cust_13 Correct item dispatched! Return label for blender has been sent to your email.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "43",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "45",
+    "author_id": "cust_14",
+    "inbound": true,
+    "created_at": "Tue Oct 11 09:00:00 +0000 2017",
+    "text": "@AmazonHelp How do I update my default delivery address on my account?",
+    "response_tweet_id": "46",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "46",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 11 09:03:00 +0000 2017",
+    "text": "@cust_14 Go to Your Account > Your Addresses to add, edit, or set default delivery addresses.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "45",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "47",
+    "author_id": "cust_15",
+    "inbound": true,
+    "created_at": "Tue Oct 11 10:00:00 +0000 2017",
+    "text": "@AmazonHelp I was billed for a gift card that I never received or purchased.",
+    "response_tweet_id": "48",
+    "in_response_to_tweet_id": "<NA>",
+    "brand": null
+  },
+  {
+    "tweet_id": "48",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 11 10:05:00 +0000 2017",
+    "text": "@cust_15 Security alert! DM us your email and account details immediately so our payments security team can audit this charge.",
+    "response_tweet_id": "49",
+    "in_response_to_tweet_id": "47",
+    "brand": "AmazonHelp"
+  },
+  {
+    "tweet_id": "49",
+    "author_id": "cust_15",
+    "inbound": true,
+    "created_at": "Tue Oct 11 10:10:00 +0000 2017",
+    "text": "@AmazonHelp Sent DM with payment transaction ID.",
+    "response_tweet_id": "50",
+    "in_response_to_tweet_id": "48",
+    "brand": null
+  },
+  {
+    "tweet_id": "50",
+    "author_id": "AmazonHelp",
+    "inbound": false,
+    "created_at": "Tue Oct 11 10:15:00 +0000 2017",
+    "text": "@cust_15 Transaction cancelled, refund initiated, and security verification required.",
+    "response_tweet_id": "<NA>",
+    "in_response_to_tweet_id": "49",
+    "brand": "AmazonHelp"
+  }
+]

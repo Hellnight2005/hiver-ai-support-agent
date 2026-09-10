@@ -1,0 +1,148 @@
+{
+  "intents": [
+    {
+      "name": "delivery_issue",
+      "definition": "Customer inquiring about delayed, missing, or tracking status of a package/shipment.",
+      "examples": [
+        "My package was supposed to arrive yesterday but hasn't arrived",
+        "Where is my order tracking link?",
+        "Package says delivered but nothing is on my porch"
+      ],
+      "positive_signals": ["delivered", "tracking", "package", "shipped", "courier", "delay"],
+      "negative_signals": ["refund", "billing", "password", "wrong item"],
+      "boundary": "Pertains specifically to shipping/fulfillment timelines. If the item is damaged, use damaged_item."
+    },
+    {
+      "name": "refund_request",
+      "definition": "Customer requesting a money refund or monetary adjustment for a charge.",
+      "examples": [
+        "I was charged twice, please refund my credit card",
+        "Can I get a full refund for this unused service?",
+        "I want a refund for the extra monthly fee"
+      ],
+      "positive_signals": ["refund", "money back", "reimburse", "double charged", "charged twice"],
+      "negative_signals": ["cancel order", "tracking", "technical glitch"],
+      "boundary": "Focuses on monetary reimbursement. If customer simply wants to stop an order, use cancellation."
+    },
+    {
+      "name": "account_access",
+      "definition": "Customer reporting difficulties logging into their account, password resets, or credentials.",
+      "examples": [
+        "I cannot log into my account even after resetting password",
+        "Password reset email is not arriving",
+        "Account locked out due to multiple attempts"
+      ],
+      "positive_signals": ["login", "password", "sign in", "account access", "locked out", "credentials"],
+      "negative_signals": ["unauthorized charge", "fraud"],
+      "boundary": "Standard user access issue. If suspicion of account breach or unauthorized charge, use account_security."
+    },
+    {
+      "name": "damaged_item",
+      "definition": "Customer reporting receiving merchandise that is physically damaged, broken, or defective.",
+      "examples": [
+        "Received a broken ceramic vase in my package today",
+        "The item arrived shattered inside the box",
+        "My device screen is damaged upon unboxing"
+      ],
+      "positive_signals": ["broken", "damaged", "shattered", "defective", "cracked", "broken box"],
+      "negative_signals": ["wrong item", "late delivery"],
+      "boundary": "Physical defect/damage to the received item."
+    },
+    {
+      "name": "wrong_item_received",
+      "definition": "Customer received an item different from what they ordered.",
+      "examples": [
+        "I ordered shoes but got a kitchen blender instead",
+        "Received wrong color and wrong size tshirt",
+        "Package contained someone else's order"
+      ],
+      "positive_signals": ["wrong item", "wrong order", "received wrong", "incorrect item", "got a blender"],
+      "negative_signals": ["damaged", "broken"],
+      "boundary": "Order fulfillment mismatch."
+    },
+    {
+      "name": "cancellation",
+      "definition": "Customer requesting to cancel an order, subscription, or pending transaction.",
+      "examples": [
+        "I want to cancel order 408-1122334 before it ships",
+        "Please cancel my monthly membership renewal",
+        "How do I cancel a pending purchase?"
+      ],
+      "positive_signals": ["cancel", "cancellation", "cancel order", "stop subscription"],
+      "negative_signals": ["refund", "damaged"],
+      "boundary": "Action to terminate an order/subscription."
+    },
+    {
+      "name": "pricing_question",
+      "definition": "Customer inquiring about product pricing, subscription tiers, or cost details.",
+      "examples": [
+        "How much is Prime Video monthly subscription right now?",
+        "What are the pricing plans for annual renewal?",
+        "Are there any discounts available for students?"
+      ],
+      "positive_signals": ["how much", "cost", "price", "subscription rate", "discount"],
+      "negative_signals": ["charged twice", "refund"],
+      "boundary": "General inquiry about prices before or independent of billing issues."
+    },
+    {
+      "name": "account_security",
+      "definition": "Customer reporting suspected fraud, unauthorized transactions, or security compromise.",
+      "examples": [
+        "Someone made an unauthorized purchase on my account!",
+        "I was billed for a gift card I never purchased",
+        "My account was hacked and card details compromised"
+      ],
+      "positive_signals": ["unauthorized", "fraud", "hacked", "stolen", "compromised", "security"],
+      "negative_signals": ["password reset", "forgot password"],
+      "boundary": "High-risk security or fraudulent activity. Requires immediate human escalation."
+    },
+    {
+      "name": "technical_problem",
+      "definition": "Customer reporting app glitches, web crashes, media playback errors, or hardware malfunction.",
+      "examples": [
+        "Music keeps pausing automatically every 30 seconds",
+        "The app keeps crashing whenever I open settings",
+        "iPhone screen is completely black and won't turn on"
+      ],
+      "positive_signals": ["crash", "glitch", "bug", "pausing", "black screen", "error code"],
+      "negative_signals": ["wrong item", "delivery"],
+      "boundary": "Software/hardware operational issues."
+    },
+    {
+      "name": "complaint",
+      "definition": "Customer expressing dissatisfaction with service quality, agent interactions, or brand experience.",
+      "examples": [
+        "Your customer service was extremely rude and unhelpful",
+        "I have been waiting 3 hours on hold, this is terrible",
+        "Very disappointed with the quality of support"
+      ],
+      "positive_signals": ["terrible", "horrible service", "rude", "disappointed", "worst customer support"],
+      "negative_signals": ["thank you", "great job"],
+      "boundary": "Explicit dissatisfaction or service complaint."
+    },
+    {
+      "name": "feedback_praise",
+      "definition": "Customer expressing appreciation, gratitude, or positive feedback.",
+      "examples": [
+        "Your customer support team was super helpful today, thank you!",
+        "Great experience with the rep who solved my issue",
+        "Thanks for the fast delivery!"
+      ],
+      "positive_signals": ["thank you", "thanks", "super helpful", "great service", "awesome"],
+      "negative_signals": ["complaint", "rude"],
+      "boundary": "Positive sentiment or compliment."
+    },
+    {
+      "name": "unknown_other",
+      "definition": "Message does not match any known intent or contains insufficient, ambiguous context.",
+      "examples": [
+        "asdfghjkl",
+        "Hey",
+        "Check this out http://example.com"
+      ],
+      "positive_signals": ["unknown", "ambiguous", "unclear"],
+      "negative_signals": [],
+      "boundary": "Fallback for unclassifiable or ambiguous customer messages."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "conversation_id": "conv_15",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "15",
+        "role": "customer",
+        "author_id": "cust_5",
+        "text": "@AmazonHelp How much is Prime video monthly subscription right now in the US?",
+        "timestamp": "Tue Oct 10 14:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "16",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_5 Hi! Prime Video standalone subscription is $8.99/month, or included with full Amazon Prime at $14.99/month.",
+        "timestamp": "Tue Oct 10 14:03:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_5"
+  }
+]

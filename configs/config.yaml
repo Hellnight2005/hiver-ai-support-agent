@@ -1,0 +1,42 @@
+brand:
+  default_brand: "AmazonHelp"
+
+paths:
+  raw_data: "data/raw/twcs.csv"
+  sample_data: "data/raw/sample_twcs.csv"
+  processed_data_dir: "data/processed"
+  golden_set: "data/golden/golden_set.jsonl"
+  intent_taxonomy: "artifacts/intent_taxonomy.json"
+  retrieval_index_dir: "artifacts/retrieval_index"
+  evaluation_results: "artifacts/evaluation_results.json"
+  cache_dir: "data/cache"
+
+splits:
+  dev_ratio: 0.70
+  val_ratio: 0.15
+  eval_ratio: 0.15
+  seed: 42
+
+retrieval:
+  embedding_model: "all-MiniLM-L6-v2"
+  top_k: 5
+  similarity_metric: "cosine"
+
+policy:
+  auto_handle_intent_threshold: 0.80
+  auto_handle_retrieval_threshold: 0.20
+  min_evidence_count: 1
+  sensitive_intents:
+    - "account_security"
+    - "complaint"
+    - "fraud_report"
+    - "legal_complaint"
+
+llm:
+  model: "gpt-4o-mini"
+  temperature: 0.0
+  max_tokens: 300
+
+judge:
+  model: "gpt-4o-mini"
+  sample_size: 50

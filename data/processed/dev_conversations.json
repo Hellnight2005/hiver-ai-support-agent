@@ -1,0 +1,254 @@
+[
+  {
+    "conversation_id": "conv_25",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "25",
+        "role": "customer",
+        "author_id": "cust_8",
+        "text": "@AmazonHelp Someone made an unauthorized purchase on my account using my stored credit card!",
+        "timestamp": "Tue Oct 10 17:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "26",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_8 We take security very seriously! Please immediately DM us your email and secure your account by changing your password.",
+        "timestamp": "Tue Oct 10 17:02:00 +0000 2017"
+      },
+      {
+        "tweet_id": "27",
+        "role": "customer",
+        "author_id": "cust_8",
+        "text": "@AmazonHelp I changed password. Please cancel that order and secure the account.",
+        "timestamp": "Tue Oct 10 17:10:00 +0000 2017"
+      },
+      {
+        "tweet_id": "28",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_8 Fraud team has been alerted, unauthorized transaction blocked, and account secured.",
+        "timestamp": "Tue Oct 10 17:15:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_8"
+  },
+  {
+    "conversation_id": "conv_17",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "17",
+        "role": "customer",
+        "author_id": "cust_6",
+        "text": "@AmazonHelp My package says delivered but I checked my porch and mailbox and nothing is there.",
+        "timestamp": "Tue Oct 10 15:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "18",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_6 Please allow 24 hours as carriers sometimes scan early. If still missing, DM us your order details for assistance.",
+        "timestamp": "Tue Oct 10 15:05:00 +0000 2017"
+      },
+      {
+        "tweet_id": "19",
+        "role": "customer",
+        "author_id": "cust_6",
+        "text": "@AmazonHelp Still missing after checking with neighbors. Please help.",
+        "timestamp": "Tue Oct 10 15:30:00 +0000 2017"
+      },
+      {
+        "tweet_id": "20",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_6 Thank you for confirming. We have initiated a replacement order for you at no additional charge.",
+        "timestamp": "Tue Oct 10 15:35:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_6"
+  },
+  {
+    "conversation_id": "conv_9",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "9",
+        "role": "customer",
+        "author_id": "cust_3",
+        "text": "@AmazonHelp I cannot log into my account. It says password incorrect even though I reset it.",
+        "timestamp": "Tue Oct 10 12:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "10",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_3 Sorry for the hassle! Try clearing browser cache or resetting password via our account recovery link: amazon.com/help",
+        "timestamp": "Tue Oct 10 12:05:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_3"
+  },
+  {
+    "conversation_id": "conv_29",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "29",
+        "role": "customer",
+        "author_id": "cust_9",
+        "text": "@AmazonHelp Your customer support team was super helpful today resolving my issue. Thank you!",
+        "timestamp": "Tue Oct 10 18:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "30",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_9 You are very welcome! We are always happy to help. Have a wonderful day!",
+        "timestamp": "Tue Oct 10 18:02:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_9"
+  },
+  {
+    "conversation_id": "conv_41",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "41",
+        "role": "customer",
+        "author_id": "cust_13",
+        "text": "@AmazonHelp I received the wrong item in my package. I ordered shoes but got a kitchen blender.",
+        "timestamp": "Tue Oct 11 08:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "42",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_13 We apologize for the mix up! DM us your order number so we can send the correct item right away.",
+        "timestamp": "Tue Oct 11 08:05:00 +0000 2017"
+      },
+      {
+        "tweet_id": "43",
+        "role": "customer",
+        "author_id": "cust_13",
+        "text": "@AmazonHelp DM sent with order number 114-009988-12345.",
+        "timestamp": "Tue Oct 11 08:10:00 +0000 2017"
+      },
+      {
+        "tweet_id": "44",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_13 Correct item dispatched! Return label for blender has been sent to your email.",
+        "timestamp": "Tue Oct 11 08:15:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_13"
+  },
+  {
+    "conversation_id": "conv_21",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "21",
+        "role": "customer",
+        "author_id": "cust_7",
+        "text": "@AmazonHelp I want to cancel order 408-1122334-998877 before it ships.",
+        "timestamp": "Tue Oct 10 16:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "22",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_7 You can cancel unshipped items under Your Orders on our website, or DM us if you need us to process it for you.",
+        "timestamp": "Tue Oct 10 16:05:00 +0000 2017"
+      },
+      {
+        "tweet_id": "23",
+        "role": "customer",
+        "author_id": "cust_7",
+        "text": "@AmazonHelp DM sent with confirmation request.",
+        "timestamp": "Tue Oct 10 16:10:00 +0000 2017"
+      },
+      {
+        "tweet_id": "24",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_7 Order 408-1122334-998877 has been successfully cancelled and any hold on your card released.",
+        "timestamp": "Tue Oct 10 16:15:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_7"
+  },
+  {
+    "conversation_id": "conv_47",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "47",
+        "role": "customer",
+        "author_id": "cust_15",
+        "text": "@AmazonHelp I was billed for a gift card that I never received or purchased.",
+        "timestamp": "Tue Oct 11 10:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "48",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_15 Security alert! DM us your email and account details immediately so our payments security team can audit this charge.",
+        "timestamp": "Tue Oct 11 10:05:00 +0000 2017"
+      },
+      {
+        "tweet_id": "49",
+        "role": "customer",
+        "author_id": "cust_15",
+        "text": "@AmazonHelp Sent DM with payment transaction ID.",
+        "timestamp": "Tue Oct 11 10:10:00 +0000 2017"
+      },
+      {
+        "tweet_id": "50",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_15 Transaction cancelled, refund initiated, and security verification required.",
+        "timestamp": "Tue Oct 11 10:15:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_15"
+  },
+  {
+    "conversation_id": "conv_11",
+    "brand": "AmazonHelp",
+    "messages": [
+      {
+        "tweet_id": "11",
+        "role": "customer",
+        "author_id": "cust_4",
+        "text": "@AmazonHelp Received a broken ceramic vase in my package today! The box was completely damaged.",
+        "timestamp": "Tue Oct 10 13:00:00 +0000 2017"
+      },
+      {
+        "tweet_id": "12",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_4 That is terrible to hear! Please DM us your order ID and a photo of the damaged item so we can arrange a free replacement.",
+        "timestamp": "Tue Oct 10 13:06:00 +0000 2017"
+      },
+      {
+        "tweet_id": "13",
+        "role": "customer",
+        "author_id": "cust_4",
+        "text": "@AmazonHelp Just sent the order ID and image link in DM.",
+        "timestamp": "Tue Oct 10 13:15:00 +0000 2017"
+      },
+      {
+        "tweet_id": "14",
+        "role": "agent",
+        "author_id": "AmazonHelp",
+        "text": "@cust_4 Replacement order has been placed! You will receive a tracking link shortly.",
+        "timestamp": "Tue Oct 10 13:20:00 +0000 2017"
+      }
+    ],
+    "customer_author_id": "cust_4"
+  }
+]

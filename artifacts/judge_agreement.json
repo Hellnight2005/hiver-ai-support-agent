@@ -1,0 +1,11 @@
+{
+  "sample_size": 50,
+  "pearson_corr": 0.9693,
+  "spearman_corr": 0.8965,
+  "mae": 0.138,
+  "exact_agreement_pct": 78.0,
+  "within_1pt_agreement_pct": 100.0,
+  "cohen_kappa": 1.0,
+  "is_simulated": true,
+  "notes": "Computed using synthetic human ratings with noise perturbation for statistical pipeline demonstration."
+}
