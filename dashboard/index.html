@@ -439,22 +439,22 @@
     <div class="grid-4">
       <div class="card metric-hero">
         <div class="metric-label">AI Agent Accuracy</div>
-        <div class="metric-val" style="color: #34d399;">78.0%</div>
-        <div class="metric-sub">Outperforms Majority (+69.5%) & TF-IDF (+30.5%)</div>
+        <div class="metric-val" style="color: #34d399;">80.5%</div>
+        <div class="metric-sub">Outperforms Majority (+72.0%) & TF-IDF (+33.0%)</div>
       </div>
       <div class="card metric-hero">
         <div class="metric-label">Macro F1 Score</div>
-        <div class="metric-val" style="color: #60a5fa;">0.756</div>
+        <div class="metric-val" style="color: #60a5fa;">0.785</div>
         <div class="metric-sub">Harmonic mean across 12 discrete intent categories</div>
       </div>
       <div class="card metric-hero">
-        <div class="metric-label">Unsafe Auto-Handling</div>
-        <div class="metric-val" style="color: #34d399;">0.0%</div>
-        <div class="metric-sub">Deterministic policy engine routes 100% of risk cases</div>
+        <div class="metric-label">Escalation F1</div>
+        <div class="metric-val" style="color: #a78bfa;">0.571</div>
+        <div class="metric-sub">Precision: 48.1% &bull; Recall: 70.3%</div>
       </div>
       <div class="card metric-hero">
         <div class="metric-label">Golden Evaluation Set</div>
-        <div class="metric-val" style="color: #a78bfa;">200</div>
+        <div class="metric-val" style="color: #38bdf8;">200</div>
         <div class="metric-sub">Multi-turn Twitter threads &bull; 0.0% data leakage</div>
       </div>
     </div>
@@ -473,9 +473,11 @@
               <th>System Architecture</th>
               <th class="text-right">Intent Accuracy</th>
               <th class="text-right">Macro F1</th>
+              <th class="text-right">Escalation Precision</th>
+              <th class="text-right">Escalation Recall</th>
               <th class="text-right">Escalation F1</th>
               <th class="text-right">Unsafe Auto Rate</th>
-              <th class="text-right">Avg Reply Score</th>
+              <th class="text-right">Avg Reply Quality</th>
             </tr>
           </thead>
           <tbody>
@@ -483,6 +485,8 @@
               <td><strong>Majority Class Baseline</strong> (Most frequent class)</td>
               <td class="text-right font-mono">8.5%</td>
               <td class="text-right font-mono">0.013</td>
+              <td class="text-right font-mono">0.0%</td>
+              <td class="text-right font-mono">0.0%</td>
               <td class="text-right font-mono">0.000</td>
               <td class="text-right font-mono" style="color: var(--accent-rose);">18.5%</td>
               <td class="text-right font-mono">N/A</td>
@@ -491,24 +495,30 @@
               <td><strong>TF-IDF + Logistic Regression</strong> (Classical n-gram)</td>
               <td class="text-right font-mono">47.5%</td>
               <td class="text-right font-mono">0.369</td>
+              <td class="text-right font-mono">18.5%</td>
+              <td class="text-right font-mono">100.0%</td>
               <td class="text-right font-mono">0.312</td>
               <td class="text-right font-mono" style="color: var(--accent-green);">0.0%</td>
               <td class="text-right font-mono">N/A</td>
             </tr>
             <tr>
               <td><strong>Dense Embedding Retrieval</strong> (Cosine Top-1)</td>
-              <td class="text-right font-mono">5.0%</td>
-              <td class="text-right font-mono">0.008</td>
-              <td class="text-right font-mono">0.312</td>
-              <td class="text-right font-mono" style="color: var(--accent-green);">0.0%</td>
+              <td class="text-right font-mono">47.5%</td>
+              <td class="text-right font-mono">0.351</td>
+              <td class="text-right font-mono">59.3%</td>
+              <td class="text-right font-mono">43.2%</td>
+              <td class="text-right font-mono">0.500</td>
+              <td class="text-right font-mono" style="color: #fb923c;">10.5%</td>
               <td class="text-right font-mono">N/A</td>
             </tr>
             <tr class="highlight-row">
               <td><strong>Proposed Full AI Agent</strong> (Classifier + RAG + Policy)</td>
-              <td class="text-right font-mono" style="color: #60a5fa; font-size: 1.05rem;"><strong>78.0%</strong></td>
-              <td class="text-right font-mono" style="color: #60a5fa; font-size: 1.05rem;"><strong>0.756</strong></td>
-              <td class="text-right font-mono"><strong>0.312</strong></td>
-              <td class="text-right font-mono" style="color: var(--accent-green);"><strong>0.0%</strong></td>
+              <td class="text-right font-mono" style="color: #60a5fa; font-size: 1.05rem;"><strong>80.5%</strong></td>
+              <td class="text-right font-mono" style="color: #60a5fa; font-size: 1.05rem;"><strong>0.785</strong></td>
+              <td class="text-right font-mono"><strong>48.1%</strong></td>
+              <td class="text-right font-mono"><strong>70.3%</strong></td>
+              <td class="text-right font-mono" style="color: #60a5fa; font-size: 1.05rem;"><strong>0.571</strong></td>
+              <td class="text-right font-mono" style="color: #fb923c;"><strong>5.5%</strong></td>
               <td class="text-right font-mono" style="color: #34d399;"><strong>4.25 / 5.0</strong></td>
             </tr>
           </tbody>

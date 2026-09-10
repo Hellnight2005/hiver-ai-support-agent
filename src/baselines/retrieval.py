@@ -28,8 +28,9 @@ class EmbeddingRetrievalBaseline:
             top_ev = evidence[0]
             top_sim = top_ev.similarity
             reply = top_ev.agent_response
-            decision = "AUTO_HANDLE" if top_sim >= 0.75 else "ESCALATE"
             intent_name = retrieved[0].get("intent", "unknown_other")
+            is_sensitive = intent_name in ["account_security", "complaint", "unknown_other"]
+            decision = "AUTO_HANDLE" if (top_sim >= 0.20 and not is_sensitive) else "ESCALATE"
         else:
             top_sim = 0.0
             reply = "Please DM us your details."

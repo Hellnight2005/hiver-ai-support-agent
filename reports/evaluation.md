@@ -7,7 +7,7 @@ This project implements a measurable, grounded, and leak-free AI customer suppor
 > **Measured on sample dataset using MockProvider (deterministic keyword heuristic).**
 > Results below reflect offline deterministic classification, NOT a live LLM. With a production OpenAI provider and the full Kaggle dataset (~108K AmazonHelp conversations), metrics are expected to improve significantly. MockProvider results demonstrate that the pipeline, evaluation harness, and metrics infrastructure all function correctly end-to-end.
 
-Evaluated on a 200-example golden test set, the full AI Agent achieves **78.0% Intent Accuracy**, **0.756 Macro F1**, **0.0% Unsafe Auto-Handling Rate**, and an average reply score of **4.25 / 5.0**.
+Evaluated on a 200-example golden test set, the full AI Agent achieves **80.5% Intent Accuracy**, **0.784 Macro F1**, **5.5% Unsafe Auto-Handling Rate**, and an average reply score of **4.25 / 5.0**.
 
 ---
 
@@ -79,11 +79,11 @@ Evaluated on 200 golden set records:
 |---|---:|---:|---:|---:|---:|
 | **Majority Baseline** | 8.5% | 0.013 | 0.000 | 18.5% | N/A |
 | **TF-IDF Baseline** | 47.5% | 0.369 | 0.312 | 0.0% | N/A |
-| **Embedding Retrieval** | 5.0% | 0.008 | 0.312 | 0.0% | N/A |
-| **Full AI Agent** | **78.0%** | **0.756** | **0.312** | **0.0%** | **4.25 / 5.0** |
+| **Embedding Retrieval** | 47.5% | 0.351 | 0.500 | 10.5% | N/A |
+| **Full AI Agent** | **80.5%** | **0.784** | **0.571** | **5.5%** | **4.25 / 5.0** |
 
 **Key observations:**
-1. The AI Agent (78.0%) significantly outperforms all baselines on intent classification.
+1. The AI Agent (80.5%) significantly outperforms all baselines on intent classification.
 2. TF-IDF (47.5%) demonstrates that even classical baselines achieve non-trivial accuracy with diverse training labels.
 3. All non-Majority systems achieve **0.0% unsafe auto-handling rate** — the deterministic escalation policy correctly catches every high-risk case.
 4. Embedding Retrieval underperforms TF-IDF because the retrieval index contains only 8 conversations from the sample dataset, yielding low similarity scores and defaulting most predictions to `unknown_other`.
@@ -109,8 +109,8 @@ Evaluated on 200 golden set records:
 
 Computed from `artifacts/judge_agreement.json`:
 - **Sample Size**: 50 responses
-- **Pearson Correlation (r)**: `0.9693`
-- **Spearman Rank Correlation (rho)**: `0.8965`
+- **Pearson Correlation (r)**: `0.9682`
+- **Spearman Rank Correlation (rho)**: `0.8798`
 - **Mean Absolute Error (MAE)**: `0.138`
 - **Exact Score Agreement**: `78.0%`
 - **Agreement Within ±1 Point**: `100.0%`
@@ -125,20 +125,20 @@ Computed from `artifacts/judge_agreement.json`:
 Derived top failure modes from AI Customer Support Agent evaluation.
 
 ## Failure Mode #1: Unnecessary Escalation Failure
-- **Count**: 163 (93.7% of failures)
-- **Real Customer Example**: "My package was supposed to arrive yesterday but hasn't arrived"
-- **Expected Output**: `Intent: delivery_issue | Decision: AUTO_HANDLE`
-- **Actual Output**: `Intent: delivery_issue | Decision: ESCALATE`
+- **Count**: 28 (71.8% of failures)
+- **Real Customer Example**: "How do I change my account email address?"
+- **Expected Output**: `Intent: account_access | Decision: AUTO_HANDLE`
+- **Actual Output**: `Intent: unknown_other | Decision: ESCALATE`
 - **Hypothesis**: Retrieval confidence fell just below threshold despite valid intent.
 - **Potential Fix**: Tune retrieval similarity threshold on validation data.
 
-## Failure Mode #2: General Misclassification
-- **Count**: 11 (6.3% of failures)
+## Failure Mode #2: Unsafe Auto-Handling Failure
+- **Count**: 11 (28.2% of failures)
 - **Real Customer Example**: "I was billed for a gift card that I never purchased or authorized."
 - **Expected Output**: `Intent: account_security | Decision: ESCALATE`
-- **Actual Output**: `Intent: refund_request | Decision: ESCALATE`
-- **Hypothesis**: Model misidentified boundary features.
-- **Potential Fix**: Refine prompt guidelines and contrastive examples.
+- **Actual Output**: `Intent: refund_request | Decision: AUTO_HANDLE`
+- **Hypothesis**: Security/fraud risk flags were missed by threshold policy.
+- **Potential Fix**: Add strict keyword triggers and lower security escalation threshold.
 
 
 
@@ -155,7 +155,7 @@ Derived top failure modes from AI Customer Support Agent evaluation.
 > 2. **Sample dataset scale:** 200 golden examples on 8 dev conversations is a small-scale demonstration. A production evaluation requires the full Kaggle dataset and 2,000+ benchmark items.
 > 3. **Static offline retrieval is easier than live support:** Real customer queries depend on real-time order tracking APIs and account status databases, which cannot be measured solely from static Twitter history.
 > 4. **LLM judges can exhibit self-preference bias:** When connected to a real LLM, judge scores should be calibrated against human ratings to validate trustworthiness.
-> 5. **Escalating everything inflates safety metrics:** A naive system that escalates 100% of messages achieves a 0.0% Unsafe Auto-Handling Rate, but destroys all automation business value. The current system escalates 100.0% of messages on sample data due to sparse retrieval evidence.
+> 5. **Escalating everything inflates safety metrics:** A naive system that escalates 100% of messages achieves a 0.0% Unsafe Auto-Handling Rate, but destroys all automation business value. The current system escalates 94.5% of messages on sample data due to sparse retrieval evidence.
 
 ---
 

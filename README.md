@@ -177,12 +177,12 @@ All evaluation metrics in this repository are dynamically generated and strictly
 artifacts/evaluation_results.json
 ```
 
-| System Architecture | Intent Accuracy | Macro F1 | Escalation F1 | Unsafe Auto Rate | Avg Reply Quality |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Majority Class Baseline** | 8.5% | 0.013 | 0.000 | 18.5% | N/A |
-| **TF-IDF + Logistic Regression** | 47.5% | 0.369 | 0.312 | 0.0% | N/A |
-| **Dense Embedding Retrieval** | 5.0% | 0.008 | 0.312 | 0.0% | N/A |
-| **Proposed Full AI Agent** | **78.0%** | **0.756** | **0.312** | **0.0%** | **4.4 / 5.0** |
+| System Architecture | Intent Accuracy | Macro F1 | Escalation Precision | Escalation Recall | Escalation F1 | Unsafe Auto Rate | Avg Reply Quality |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Majority Class Baseline** | 8.5% | 0.013 | 0.0% | 0.0% | 0.000 | 18.5% | N/A |
+| **TF-IDF + Logistic Regression** | 47.5% | 0.369 | 18.5% | 100.0% | 0.312 | 0.0% | N/A |
+| **Dense Embedding Retrieval** | 47.5% | 0.351 | 59.3% | 43.2% | 0.500 | 10.5% | N/A |
+| **Proposed Full AI Agent** | **80.5%** | **0.785** | **48.1%** | **70.3%** | **0.571** | **5.5%** | **4.25 / 5.0** |
 
 ---
 

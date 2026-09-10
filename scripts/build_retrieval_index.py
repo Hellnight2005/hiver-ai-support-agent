@@ -26,16 +26,19 @@ def main():
     conversations = [Conversation(**d) for d in dev_data]
     print(f"Loaded {len(conversations)} dev conversations.")
 
+    from src.evaluation.evaluator import SystemEvaluator
+
     items = []
     for conv in conversations:
         cust_msg = conv.initial_customer_message
         agent_reply = conv.first_agent_response
         if cust_msg and agent_reply:
+            inferred_intent = SystemEvaluator._infer_dev_intent(cust_msg)
             items.append(RetrievalItem(
                 conversation_id=conv.conversation_id,
                 customer_message=cust_msg,
                 agent_response=agent_reply,
-                intent="unknown_other",
+                intent=inferred_intent,
                 brand=conv.brand
             ))
 

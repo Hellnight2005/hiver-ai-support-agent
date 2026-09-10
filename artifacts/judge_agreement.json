@@ -1,7 +1,7 @@
 {
   "sample_size": 50,
-  "pearson_corr": 0.9693,
-  "spearman_corr": 0.8965,
+  "pearson_corr": 0.9682,
+  "spearman_corr": 0.8798,
   "mae": 0.138,
   "exact_agreement_pct": 78.0,
   "within_1pt_agreement_pct": 100.0,

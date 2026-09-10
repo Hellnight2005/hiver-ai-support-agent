@@ -79,7 +79,8 @@ class TFIDFBaseline:
                 break
 
         top_sim = evidence[0].similarity if evidence else 0.0
-        decision = "AUTO_HANDLE" if confidence >= 0.70 and top_sim >= 0.50 else "ESCALATE"
+        is_sensitive = pred_intent in ["account_security", "complaint", "unknown_other"]
+        decision = "AUTO_HANDLE" if (confidence >= 0.50 and top_sim >= 0.15 and not is_sensitive) else "ESCALATE"
 
         return AgentResponse(
             message=customer_message,
